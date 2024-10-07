@@ -40,14 +40,14 @@ const (
 	elwaRegTemp      = 1001
 	elwaRegTempLimit = 1002
 	elwaRegStatus    = 1003
-	elwaRegPower     = 1074
+	elwaRegPower     = 1082
 )
 
 func init() {
 	registry.Add("ac-elwa-2", NewMyPvElwa2FromConfig)
 }
 
-// https://github.com/evcc-io/evcc/discussions/12761
+// https://github.com/evcc-io/evcc/discussions/16447
 
 // NewMyPvElwa2FromConfig creates a MyPvElwa2 charger from generic config
 func NewMyPvElwa2FromConfig(other map[string]interface{}) (api.Charger, error) {
